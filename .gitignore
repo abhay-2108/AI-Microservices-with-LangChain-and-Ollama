@@ -2,6 +2,7 @@ myenv/
 .venv/
 myenv/
 ENV/
+.env
 __pypackages__/
 
 __pycache__/
