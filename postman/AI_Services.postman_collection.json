@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+		"name": "AI Services",
+		"description": "A collection of requests for the AI Services API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Summarize Text",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"LangChain is a framework for developing applications powered by language models. It enables applications that are data-aware, agentic, and can reason. The core idea of the library is that we can chain together different components to create more advanced use cases around LLMs. Chains allow us to combine multiple components together to create a single, coherent application. For example, we can create a chain that takes user input, formats it with a PromptTemplate, and then passes the formatted response to an LLM.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/summarize",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"summarize"
+					]
+				},
+				"description": "Summarizes the provided text."
+			},
+			"response": []
+		},
+		{
+			"name": "Question Answering (RAG)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"Who created Python?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/qa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"qa"
+					]
+				},
+				"description": "Answers a question based on a pre-loaded document."
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Learning Path",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"profile\": \"I am a beginner with basic knowledge of HTML and CSS.\",\n  \"goal\": \"I want to become a backend developer.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/learn-path",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"learn-path"
+					]
+				},
+				"description": "Suggests a learning path based on user profile and goal."
+			},
+			"response": []
+		}
+	]
+}

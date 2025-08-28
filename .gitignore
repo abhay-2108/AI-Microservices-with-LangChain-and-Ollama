@@ -1,0 +1,15 @@
+myenv/
+.venv/
+myenv/
+ENV/
+__pypackages__/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# IDE configuration files
+.vscode/
+.idea/
