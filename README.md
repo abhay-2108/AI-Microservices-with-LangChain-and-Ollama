@@ -1,6 +1,11 @@
 # AI Microservices API with LangChain & FastAPI
 
 This project provides a robust backend for three distinct AI services, exposed as a REST API using FastAPI and powered by LangChain. It leverages local, open-source LLMs through Ollama to ensure privacy and control.
+<img width="1896" height="906" alt="pic1" src="https://github.com/user-attachments/assets/3ec1d913-9da9-4238-9fc4-b447f5a36ab2" />
+<img width="1823" height="757" alt="pic2" src="https://github.com/user-attachments/assets/49d1373b-0804-4211-9f91-a7b292ca0f67" />
+<img width="1837" height="872" alt="pic3" src="https://github.com/user-attachments/assets/3fad424f-4aad-4200-81ae-dfd06efac6be" />
+
+
 
 ## Features
 
